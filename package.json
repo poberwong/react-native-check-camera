@@ -1,0 +1,19 @@
+{
+  "name": "react-native-check-camera",
+  "version": "0.0.1",
+  "description": "check whether camera-permission is denied",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bob1993/react-native-check-camera.git"
+  },
+  "author": "poberwong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bob1993/react-native-check-camera/issues"
+  },
+  "homepage": "https://github.com/Bob1993/react-native-check-camera#readme"
+}
