@@ -1,4 +1,4 @@
-# react-native-intent-launcher
+# react-native-intent-launcher (only for Android)
 call native function `startActivity` in react-native
 
 ## Description
