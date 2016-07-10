@@ -1,34 +1,21 @@
-# react-native-intent-launcher (only for Android)
-call native function `startActivity` in react-native
+# react-native-check-camera (only for Android)
+to check whether camera-permission is denied by user
 
 ## Description
-You can call native function `startActivity` in react-native to do something with `Intent` which can only be solved with android native code
+Generally speaking, we can't get to know whether camera-permission is denied with API support by Google and this library will achieve it, Maybe it could work for you.
 
 ## Installation
 
-1. `npm install react-native-intent-launcher` 
-2. `rnpm link react-native-intent-launcher`
+1. `npm install react-native-check-camera` 
+2. `rnpm link react-native-check-camera`
 
 ## Usage
-```
-import IntentLauncher, { IntentConstant } from 'react-native-intent-launcher'
-...
-IntentLauncher.startActivity({
-	action: 'android.settings.APPLICATION_DETAILS_SETTINGS',
-	data: 'package:com.example'
-})
-...
-```
-you can view the code in [Example](https://github.com/Bob1993/react-native-intent-launcher/blob/master/Example/index.android.js) of the Repository
 
-## Properties
-* `action` String
-* `data` String
-* `category` String
-* `flags` String
-* `extra` Object
+```
+import CheckCamera from 'react-native-check-camera'
 
-In the `IntentConstant`, we provide some constants for these properties, you can look up document provided by google to find out property we didn't support currently.
+CheckCamera.checkAuthorization(result => console.log('result: ', result))
+```
 
 ## License
 *MIT*
